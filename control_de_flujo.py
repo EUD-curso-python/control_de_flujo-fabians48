@@ -33,11 +33,11 @@ while n2<=50:
 """Guarde en `suma100` el entero de la suma de todos los números entre 1 y 100:
 """
 n=1
-naturales=[]
+suma100=0
 while n<=100:
-  naturales.append(n)
+  suma100 = suma100 + n
   n +=1
-
+#print(suma100)
 
 
 
@@ -48,7 +48,16 @@ separados por coma, así:
 '134,268,...'
 
 """
-
+n=1
+temp=134
+tabla100=""
+while n<=10:
+  if tabla100 == "":
+    tabla100 = str(temp)  
+  else:
+    tabla100 = tabla100 + ',' + str(temp*n)
+  n +=1
+print(tabla100)
 
 
 
