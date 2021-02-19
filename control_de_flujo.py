@@ -2,11 +2,11 @@
 """Guarde en lista `naturales` los primeros 100 números naturales (desde el 1) 
 usando el bucle while
 """
-#n=1
-#naturales=[]
-#while n<=100:
-  #naturales.append(n)
-  #n +=1
+n=1
+naturales=[]
+while n<=100:
+  naturales.append(n)
+  n +=1
 #print(naturales)
 
 
@@ -26,13 +26,17 @@ while n2<=50:
     n +=1
   acumulado.append(" ".join(temp))
   n2 +=1
-print(acumulado)
+#print(acumulado)
 
 
 
 """Guarde en `suma100` el entero de la suma de todos los números entre 1 y 100:
 """
-
+n=1
+naturales=[]
+while n<=100:
+  naturales.append(n)
+  n +=1
 
 
 
