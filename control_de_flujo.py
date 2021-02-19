@@ -2,12 +2,12 @@
 """Guarde en lista `naturales` los primeros 100 números naturales (desde el 1) 
 usando el bucle while
 """
-n=1
-naturales=[]
-while n<=100:
-  naturales.append(n)
-  n +=1
-print(naturales)
+#n=1
+#naturales=[]
+#while n<=100:
+  #naturales.append(n)
+  #n +=1
+#print(naturales)
 
 
 """Guarde en `acumulado` una lista con el siguiente patrón:
@@ -16,7 +16,17 @@ print(naturales)
 
 Hasta el número 50.
 """
-
+n=1
+n2=1
+acumulado=[]
+temp=[]
+while n2<=50:
+  while n<=n2:
+    temp.append(str(n))
+    n +=1
+  acumulado.append(" ".join(temp))
+  n2 +=1
+print(acumulado)
 
 
 
