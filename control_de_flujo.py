@@ -143,16 +143,23 @@ del segundo cada uno se calcula sumando los dos anteriores términos de la serie
 [0, 1, 1, 2, 3, 5, 8, ...]
 
 """
-#n = n-1 + n-2
 n=2
 fibonacci=[0,1]
-while n < 6:
-  for i in (fibonacci.reverse()):
+while n < 60:
+  valor=0
+  cont=1
+  for i in fibonacci[::-1]:
     print(i)
-  #fibonacci.append((n-1)+(n-2))
+    if cont<=2:
+      valor=valor+i
+      cont += 1
+    else:
+      print("sale")
+      break
+  fibonacci.append(valor)
+  print(valor)
   n +=1
-fibonacci.reverse()
-print(fibonacci)
+#print(fibonacci)
 
 
 """Guardar en `factorial` el factorial de 30
