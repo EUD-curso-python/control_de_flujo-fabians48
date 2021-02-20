@@ -191,7 +191,7 @@ while n <= 100:
     i += 1
   cubos.append(cubo)
   n += 1
-print(cubos)
+#print(cubos)
 
 
 
@@ -199,9 +199,18 @@ print(cubos)
 """Encuentre la suma de la serie 2 +22 + 222 + 2222 + .. hasta sumar 10 términos 
 y guardar resultado en variable `suma_2s` 
 """
-
-
-
+n= 1
+i= 1
+serie = '2'
+suma_2s=0
+while n <= 10:
+  while i < n:
+    serie = serie + '2'
+    i+=1
+  suma_2s = suma_2s + int(serie)
+  n += 1
+print(suma_2s)
+  
 
 
 """Guardar en un string llamado `patron` el siguiente patrón llegando a una 
