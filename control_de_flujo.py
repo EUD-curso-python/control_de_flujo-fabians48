@@ -125,8 +125,7 @@ while n <= 300:
   for i in range(temp,1,-1):
     fact=fact*(i-1)
   fact = (fact+1)%n
-  if fact ==0:
-    primos += 1
+  if fact ==0:    
     primos.append(n)
   #print("numero", n ,"Factorial",temp, " es ", fact)
   n +=1
