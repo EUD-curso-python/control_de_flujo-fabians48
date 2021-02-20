@@ -72,11 +72,7 @@ multiplos3=0
 for i in lista1:
   if i%3 == 0 and i<300:
     multiplos3 +=1
-print(multiplos3)
-
-
-
-
+#print(multiplos3)
 
 """Guardar en `regresivo50` una lista con la cuenta regresiva desde el número 
 50 hasta el 1, así:
@@ -92,8 +88,13 @@ print(multiplos3)
   '1'
 ]
 """
-
-
+regresivo50=[]
+for i in range(50,0,-1):
+  temp=[]
+  for e in range(i,0,-1):
+    temp.append(str(e))
+  regresivo50.append(" ".join(temp))    
+print(regresivo50)
 
 
 
