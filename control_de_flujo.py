@@ -118,7 +118,7 @@ otros números enteros.
 n=37
 temp=0
 fact=0
-primos=0
+primos=[]
 while n <= 300:
   temp = n-1
   fact = temp  
@@ -127,6 +127,7 @@ while n <= 300:
   fact = (fact+1)%n
   if fact ==0:
     primos += 1
+    primos.append(n)
   #print("numero", n ,"Factorial",temp, " es ", fact)
   n +=1
 print(primos)
