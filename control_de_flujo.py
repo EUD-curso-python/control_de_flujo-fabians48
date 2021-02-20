@@ -175,7 +175,7 @@ for i in lista3:
   if posicion%2 == 0 and posicion <= 80:
     pares.append(i)
   posicion += 1
-print(pares)
+#print(pares)
 #enumerate evita crear la variable posicion
 
 
@@ -210,7 +210,7 @@ while n <= 10:
     i+=1
   suma_2s = suma_2s + int(serie)
   n += 1
-#print(suma_2s)
+print(suma_2s)
   
 
 
