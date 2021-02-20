@@ -172,11 +172,11 @@ lista3 = [941, 149, 672, 208, 99, 562, 749, 947, 251, 750, 889, 596, 836, 742, 5
 pares=[]
 posicion =0
 for i in lista3:
-  posicion += 1
   if posicion%2 == 0 and posicion <= 80:
     pares.append(i)
-#print(pares)
-
+  posicion += 1
+print(pares)
+#enumerate evita crear la variable posicion
 
 
 """Guarde en lista `cubos` el cubo (potencia elevada a la 3) de los números del 
@@ -244,7 +244,7 @@ while n <= 5:
     i+=1
   patron=serie+'\n'
   n += 1
-print(patron)
+#print(patron)
 
 
 
