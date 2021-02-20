@@ -210,7 +210,7 @@ while n <= 10:
     i+=1
   suma_2s = suma_2s + int(serie)
   n += 1
-print(suma_2s)
+#print(suma_2s)
   
 
 
@@ -234,7 +234,17 @@ cantidad máxima de asteriscos de 30.
 **
 *
 """
-
+n= 1
+i= 1
+serie = '*'
+suma_2s=0
+while n <= 5:
+  while i < n:
+    serie = serie + '*'
+    i+=1
+  patron=serie+'\n'
+  n += 1
+print(patron)
 
 
 
