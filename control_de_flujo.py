@@ -240,23 +240,25 @@ serie = '*'
 asc=""
 des=""
 patron = ""
-while n <= 5:
+while n <= 30:
   while i < n:
     serie = serie + '*'
     i+=1
   if asc=="":
     asc=serie
   else:  
-    asc=asc + '_' + serie
-
-  if des=="":
-    des=serie
-  else:  
-    des=serie + '_' + des
+    asc=asc + '\n' + serie
   
+  if des=="" and n!=30:
+    des=serie
+  elif des!="" and n!=30:
+    des=serie + '\n' + des
+  else:
+    break
   n += 1
-print(asc)
-print(des)
-
-
-
+#print("asc")  
+#print(asc)
+#print("des")
+#print(des)
+patron=asc+'\n'+des
+print(patron)
