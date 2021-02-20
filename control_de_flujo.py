@@ -172,7 +172,7 @@ pares=[]
 posicion =0
 for i in lista3:
   posicion += 1
-  if i%2 == 0 and posicion <= 80:
+  if posicion%2 == 0 and posicion <= 80:
     pares.append(i)
 print(pares)
 
