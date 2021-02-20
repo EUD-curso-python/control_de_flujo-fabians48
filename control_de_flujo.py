@@ -10,6 +10,7 @@ while n<=100:
 #print(naturales)
 
 
+
 """Guarde en `acumulado` una lista con el siguiente patrón:
 
 ['1','1 2','1 2 3','1 2 3 4','1 2 3 4 5',...,'...47 48 49 50']
