@@ -174,14 +174,22 @@ for i in lista3:
   posicion += 1
   if posicion%2 == 0 and posicion <= 80:
     pares.append(i)
-print(pares)
+#print(pares)
 
 
 
 """Guarde en lista `cubos` el cubo (potencia elevada a la 3) de los números del 
 1 al 100. 
 """
-
+n=1
+cubos=[]
+while n <= 100:
+  i=1
+  cubo=n
+  while i <= 3:
+    cubo = cubo*n
+  cubos.append(cubo)
+print(cubos)
 
 
 
