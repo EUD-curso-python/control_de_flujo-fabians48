@@ -106,8 +106,7 @@ lista2 = list(range(1, 70, 5))
 invertido=[]
 for i in lista2:
   invertido.insert(0,i)
-print(lista2)
-print(invertido)
+#print(invertido)
 
 
 
@@ -116,7 +115,21 @@ print(invertido)
 Nota: Un número primo es un número entero que no se puede calcular multiplicando 
 otros números enteros.
 """
-
+n=37
+temp=0
+fact=0
+primos=0
+while n <= 300:
+  temp = n-1
+  fact = temp  
+  for i in range(temp,1,-1):
+    fact=fact*(i-1)
+  fact = (fact+1)%n
+  if fact ==0:
+    primos += 1
+  #print("numero", n ,"Factorial",temp, " es ", fact)
+  n +=1
+print(primos)
 
 
 
