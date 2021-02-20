@@ -143,9 +143,16 @@ del segundo cada uno se calcula sumando los dos anteriores términos de la serie
 [0, 1, 1, 2, 3, 5, 8, ...]
 
 """
-
-
-
+#n = n-1 + n-2
+n=2
+fibonacci=[0,1]
+while n < 6:
+  for i in (fibonacci.reverse()):
+    print(i)
+  #fibonacci.append((n-1)+(n-2))
+  n +=1
+fibonacci.reverse()
+print(fibonacci)
 
 
 """Guardar en `factorial` el factorial de 30
@@ -261,4 +268,4 @@ while n <= 30:
 #print("des")
 #print(des)
 patron=asc+'\n'+des
-print(patron)
+#print(patron)
