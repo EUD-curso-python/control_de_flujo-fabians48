@@ -57,7 +57,7 @@ while n<=10:
   else:
     tabla100 = tabla100 + ',' + str(temp*n)
   n +=1
-print(tabla100)
+#print(tabla100)
 
 
 
@@ -67,6 +67,12 @@ menores o iguales a 300 en la lista `lista1` que se define a continuación (la l
 está ordenada).
 """
 lista1 = [12, 15, 20, 27, 32, 39, 42, 48, 55, 66, 75, 82, 89, 91, 93, 105, 123, 132, 150, 180, 201, 203, 231, 250, 260, 267, 300, 304, 310, 312, 321, 326]
+
+multiplos3=0
+for i in lista1:
+  if i%3 == 0 and i<300:
+    multiplos3 +=1
+print(multiplos3)
 
 
 
