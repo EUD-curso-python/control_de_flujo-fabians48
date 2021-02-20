@@ -129,7 +129,7 @@ while n <= 300:
     primos.append(n)
   #print("numero", n ,"Factorial",temp, " es ", fact)
   n +=1
-print(primos)
+#print(primos)
 
 
 
@@ -155,8 +155,10 @@ Por ejemplo, el factorial de 5 se calcula así:
 
 5! = 5 × 4 × 3 × 2 × 1 = 120
 """
-
-
+factorial=30
+for i in range(factorial,1,-1):
+    factorial=factorial*(i-1)
+print(factorial)
 
 
 
