@@ -186,9 +186,11 @@ cubos=[]
 while n <= 100:
   i=1
   cubo=n
-  while i <= 3:
+  while i < 3:
     cubo = cubo*n
+    i += 1
   cubos.append(cubo)
+  n += 1
 print(cubos)
 
 
