@@ -94,7 +94,7 @@ for i in range(50,0,-1):
   for e in range(i,0,-1):
     temp.append(str(e))
   regresivo50.append(" ".join(temp))    
-print(regresivo50)
+#print(regresivo50)
 
 
 
@@ -103,7 +103,11 @@ print(regresivo50)
 `invertido` (sin hacer uso de la función `reversed` ni del método `reverse`)
 """
 lista2 = list(range(1, 70, 5))
-
+invertido=[]
+for i in lista2:
+  invertido.insert(0,i)
+print(lista2)
+print(invertido)
 
 
 
